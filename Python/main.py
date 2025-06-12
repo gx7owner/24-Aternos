@@ -42,7 +42,7 @@ def started(stop):
         elif message.startswith(config.get('command', 'position')):
             p = bot.entity.position; bot.chat(f"Bot > I am at {p.toString()}")
         elif message.startswith(config.get('command', 'start')):
-            bot.chat('24 ATERNOS > Bot started! - Made By Fortcote')
+            bot.chat('5goli > hello delta bhai. khana khya apne')
             bot.setControlState('forward', True)
             bot.setControlState('jump', True)
             bot.setControlState('sprint', True)
@@ -52,11 +52,11 @@ def started(stop):
     
     @On(bot, "spawn")
     def spawn(this):
-        bot.chat("Bot > Spawned!")
+        bot.chat("5goli > Spawned!")
     
     @On(bot, "death")
     def death(this):
-        bot.chat("Bot > Respawn!")
+        bot.chat("5goli > Respawn!")
 
 def start():
     global bott, stop_threads
